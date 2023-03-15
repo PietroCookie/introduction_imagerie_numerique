@@ -11,14 +11,10 @@ public class ControlGrue : MonoBehaviour
 	public ArticulationBody chariot;
 	public ArticulationBody moufle;
 
-	public Camera globalCamera;
-	public Camera cabineCamera;
-
     // Start is called before the first frame update
     void Start()
     {
-		globalCamera.enabled = true;
-		cabineCamera.enabled = false;
+		
     }
 
     // Update is called once per frame
@@ -53,25 +49,5 @@ public class ControlGrue : MonoBehaviour
 		{
 			moufle.AddRelativeForce(transform.up * -forceMoufle);
 		}
-
-		// Switch camera
-		if(Input.GetKey(KeyCode.V)){
-			if(globalCamera.enabled == false){
-				ShowGlobalCamera();
-			}
-			else {
-				ShowCabineCamera();
-			}
-		}
     }
-
-	public void ShowGlobalCamera(){
-		Camera.main.enabled = false;
-		globalCamera.enabled = true;
-	}
-
-	public void ShowCabineCamera(){
-		Camera.main.enabled = false;
-		cabineCamera.enabled = true;
-	}
 }
