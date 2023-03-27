@@ -1,4 +1,3 @@
-using System.Threading;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +13,15 @@ public class CrochetController : MonoBehaviour
     {
         if (translationEtat != EtatCrochet.Fixe)
         {
-			
+			ArticulationBody articulation = GetComponent<ArticulationBody>();
+
+            float zDrivePostion = articulation.jointPosition[0];
+
+            float targetPosition = zDrivePostion + (float)translationEtat * Time.fixedDeltaTime * vitesse;
+
+            var drive = articulation.zDrive;
+            drive.target = targetPosition;
+            articulation.zDrive = drive;
         }
     }
 }

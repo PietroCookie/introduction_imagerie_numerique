@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-	float speed = 7;
+	float speed = 1;
+	float speedRotation = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,6 @@ public class Move : MonoBehaviour
 		float inputRotation = Input.GetAxis("RotationQD");
 		
 		transform.Translate(new Vector3(0, 0, inputForward) * speed * Time.deltaTime);
-		transform.Rotate(new Vector3(0, inputRotation, 0) * speed * speed * Time.deltaTime);
+		transform.Rotate(new Vector3(0, inputRotation, 0) * speedRotation * Time.deltaTime);
 	}
 }
