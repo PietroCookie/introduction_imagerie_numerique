@@ -6,6 +6,7 @@ public class ChariotCommande : MonoBehaviour
 {
     public GameObject Chariot;
     public string axe;
+	public string tagCollisionIgnore;
 
     void Update()
     {
@@ -30,4 +31,10 @@ public class ChariotCommande : MonoBehaviour
             return EtatChariot.Fixe;
         }
     }
+
+	private void OnCollisionEnter(Collision collision) {
+		if(collision.gameObject.tag == tagCollisionIgnore) {
+			Physics.IgnoreCollision(collision.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
+		}
+	}
 }

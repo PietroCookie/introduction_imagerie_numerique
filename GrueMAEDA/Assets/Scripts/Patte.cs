@@ -7,7 +7,7 @@ public class Patte : MonoBehaviour
 {
 	// public GameObject motorRotation;
 
-	public int speed = 7;
+	public int speed;
 	public string axe;
 
     // Update is called once per frame
@@ -15,6 +15,6 @@ public class Patte : MonoBehaviour
     {
         float input = Input.GetAxis(axe);
 
-		transform.Rotate(new Vector3(0, 0, input) * speed * Time.deltaTime);
+		transform.Rotate(new Vector3(0, 0, input) * speed);
     }
 }

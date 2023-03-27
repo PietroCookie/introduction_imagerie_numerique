@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\ChariotCommande.cs" />
      <Compile Include="Assets\Scripts\CrochetController.cs" />
      <Compile Include="Assets\Scripts\FlecheCommande.cs" />
+     <Compile Include="Assets\Scripts\Grappin.cs" />
      <Compile Include="Assets\Scripts\CrochetCommande.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program/Unity 2020.3.44f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
