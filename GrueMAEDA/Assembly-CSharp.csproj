@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\ChariotControleur.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\ChariotCommande.cs" />
+     <Compile Include="Assets\Scripts\CollisionMobilecrane.cs" />
      <Compile Include="Assets\Scripts\CrochetController.cs" />
      <Compile Include="Assets\Scripts\FlecheCommande.cs" />
      <Compile Include="Assets\Scripts\Grappin.cs" />

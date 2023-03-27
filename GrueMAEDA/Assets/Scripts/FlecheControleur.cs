@@ -8,7 +8,7 @@ public class FlecheControleur : MonoBehaviour
 {
 
     public EtatFleche rotationEtat = EtatFleche.Fixe;
-    public float vitesse = 30.0f;
+    public float vitesse = 30;
 
     private ArticulationBody articulation;
 
