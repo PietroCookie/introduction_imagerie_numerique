@@ -48,13 +48,21 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\FlecheControleur.cs" />
-     <Compile Include="Assets\Scripts\Patte.cs" />
+     <Compile Include="Assets\Scripts\PatteDeploiementCommand.cs" />
+     <Compile Include="Assets\Scripts\PatteCommand.cs" />
      <Compile Include="Assets\Scripts\ChariotControleur.cs" />
+     <Compile Include="Assets\Scripts\PatteDeploiementController.cs" />
+     <Compile Include="Assets\Scripts\PatteDeploiementSecondController.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\ChariotCommande.cs" />
      <Compile Include="Assets\Scripts\CollisionMobilecrane.cs" />
      <Compile Include="Assets\Scripts\CrochetController.cs" />
      <Compile Include="Assets\Scripts\FlecheCommande.cs" />
+     <Compile Include="Assets\Scripts\PatteController.cs" />
+     <Compile Include="Assets\Scripts\PatteDeploiementSecondCommand.cs" />
+     <Compile Include="Assets\Scripts\FlecheRotationCommand.cs" />
+     <Compile Include="Assets\Scripts\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\FlecheRotationController.cs" />
      <Compile Include="Assets\Scripts\Grappin.cs" />
      <Compile Include="Assets\Scripts\CrochetCommande.cs" />
  <Reference Include="UnityEngine">
